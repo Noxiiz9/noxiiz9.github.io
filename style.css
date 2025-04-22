@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #add8e6; /* Light blue */
+}
+
+header {
+  background: #333;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about, #projects {
+  background: #add8e6; /* Light blue */
+  margin-top: 3rem;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  min-height: 300px; /* Adjust as needed */
+  padding-left: 2rem; /* Maintain left padding */
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
