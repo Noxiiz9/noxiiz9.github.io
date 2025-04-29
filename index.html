@@ -4,68 +4,194 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的作品集</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>詹芸婷的作品集</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+      background-color: #FCE5F1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #E6A6C7;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #fffbe7;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .loopy-img, .work-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .img-circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #E6A6C7;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .project-card img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #FFB3C1;
+      color: white;
+    }
+  </style>
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="#about">關於我</a>
-      <a href="#projects">作品集</a>
-      <a href="#contact">聯絡方式</a>
+<body style="padding-top: 80px;">
+  <header class="py-3 fixed-top shadow-sm" style="background-color: #E6A6C7;">
+    <nav class="container d-flex justify-content-between align-items-center navbar-expand-md" style="color: white;">
+      <h2 class="m-0">芸婷的小宇宙</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#about" class="nav-link text-white">關於我</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link text-white">作品集</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link text-white">聯絡方式</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section id="about">
-    <img src="me.jpg" alt="個人照片" style="width:200px; border-radius: 50%;">
-    <br>
-    <h1>詹芸婷</h1>
-    <p>打工狂魔/Loopy狂熱粉<br>
-      <br>
-      學歷：臺灣科技大學 企業管理系 大三<br>
-      經歷：第三宿舍10樓樓長<br>
-      興趣：打工、去韓國蒐集Loopy>.<<br>
-        <br>
-       </p>
-     <h2>Loopy狂熱粉</h2>
-    <div style="display: flex; gap: 1rem;"> <!-- 更新這裡 -->
-        <img src="Me&Loopy.jpg" alt="與Loopy合影" style="width:200px; height:200px; object-fit: cover;">
-        <img src="Loopy.jpg" alt="Loopy 收藏品" style="width:200px; height:200px; object-fit: cover;">
-      </div>
-    <div style="margin-top: 2rem;">
-        <h2>打工狂魔(Fake sober)</h2>
-        <img src="Friend.jpg" alt="打工狂魔" style="width:200px; height:200px; object-fit: cover;">
-        <img src="NY.jpg" alt="打工狂魔" style="width:200px; height:200px; object-fit: cover;">
-      <br>
-      跨年那天的人潮真的非常可怕OUO
-      </div>
-    </section>
-  <section id="projects">
-    <h2>作品集</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>巧雪夾心餅乾</h3>
-        <img src="cookies.jpg" alt="巧雪夾心餅乾" style="width:90%; height: auto; border-radius: 8px; margin-top: 1rem;">
-        <p>濃郁巧克力X棉花糖，雙重口感！</p>
-      </div>
-      <div class="project-card">
-        <h3>我叫Poopy!</h3>
-        <img src="poopy.jpg" alt="Poopy" style="width:90%; height: auto; border-radius: 8px; margin-top: 1rem;">
-        <p>可愛好動薩摩耶</p>
+  <section id="about" class="container py-5" data-aos="fade-up">
+  <div class="text-center mb-5">
+    <img src="me.jpg" alt="個人照片" class="img-circle mb-3">
+    <h3>哈囉！我是詹芸婷 👋</h3>
+    <p class="lead">台科大企業管理系大三生｜打工狂魔｜Loopy收藏達人</p>
+    <p>平常不是在打工，就是在奔向Loopy的路上 🐿️。我喜歡韓國文化，也喜歡記錄生活。</p>
+  </div>
+  <h2 class="text-center mb-4">關於我</h2>
+  <div class="d-flex flex-column flex-md-row gap-4">
+        <div class="card flex-fill text-center">
+          <div class="card-body">
+            <h5 class="card-title">Loopy 收藏達人</h5>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="MeAndLoopy.jpg" alt="與Loopy合影" class="loopy-img">
+              <img src="Loopy.jpg" alt="Loopy 收藏品" class="loopy-img">
+            </div>
+          </div>
+        </div>
+        <div class="card flex-fill text-center">
+          <div class="card-body">
+            <h5 class="card-title">打工狂魔 </h5>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img src="Friend.jpg" alt="打工狂魔" class="work-img">
+              <img src="NY.jpg" alt="跨年人潮" class="work-img">
+            </div>
+            <p class="mt-2">跨年那天的人潮真的非常可怕 OUO</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <section id="contact">
-    <h2>聯絡方式</h2>
-    <p>電話: 0909888935</p>
-    <p>Email: B11108049@gapps.ntust.edu.tw</p>
-  </section>
+  </div>
+</section>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <section id="projects" class="container py-5" data-aos="fade-up">
+  <h2 class="text-center mb-4">作品集</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title">巧雪夾心餅乾</h5>
+          <img src="cookies.jpg" class="loopy-img mt-3" alt="巧雪夾心餅乾">
+          <p class="card-text mt-3">濃郁巧克力 X 棉花糖，雙重口感！</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center">
+        <div class="card-body">
+          <h5 class="card-title">我叫 Poopy!</h5>
+          <img src="poopy.jpg" class="loopy-img mt-3" alt="Poopy">
+          <p class="card-text mt-3">可愛好動薩摩耶</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="container py-5" data-aos="fade-up">
+  <h2 class="text-center mb-4">聯絡方式</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card text-center">
+        <div class="card-body">
+           <p>📸 IG: <a href="https://instagram.com/noxiiz.9" target="_blank">@noxiiz.9</a></p>
+          <p>📱 電話: 0909888935</p>
+          <p>📧 Email: B11108049@gapps.ntust.edu.tw</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 詹芸婷 | Made with </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
-
