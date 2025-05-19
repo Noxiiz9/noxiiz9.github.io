@@ -58,7 +58,7 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
-    .loopy-img, .work-img {
+    .loopy-img {
       width: 200px;
       height: 200px;
       object-fit: cover;
@@ -74,18 +74,6 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .project-card img {
-      width: 120px;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 1rem;
-      transition: transform 0.3s;
-    }
-
-    .project-card img:hover {
-      transform: scale(1.05);
-    }
-
     footer {
       background-color: #FFB3C1;
       color: white;
@@ -97,94 +85,106 @@
   <header class="py-3 fixed-top shadow-sm" style="background-color: #E6A6C7;">
     <nav class="container d-flex justify-content-between align-items-center navbar-expand-md" style="color: white;">
       <h2 class="m-0">芸婷的小宇宙</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#about" class="nav-link text-white">關於我</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link text-white">作品集</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link text-white">聯絡方式</a></li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#about" class="nav-link text-white">關於我</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link text-white">作品集</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link text-white">聯絡方式</a></li>
+        </ul>
       </div>
     </nav>
   </header>
 
   <section id="about" class="container py-5" data-aos="fade-up">
-  <div class="text-center mb-5">
-    <img src="me.jpg" alt="個人照片" class="img-circle mb-3">
-    <h3>哈囉！我是詹芸婷 👋</h3>
-    <p class="lead">台科大企業管理系大三生｜打工狂魔｜Loopy收藏達人</p>
-    <p>平常不是在打工，就是在奔向Loopy的路上 🐿️。我喜歡韓國文化，也喜歡記錄生活。</p>
-  </div>
-  <h2 class="text-center mb-4">關於我</h2>
-  <div class="d-flex flex-column flex-md-row gap-4">
-        <div class="card flex-fill text-center">
-          <div class="card-body">
-            <h5 class="card-title">Loopy 收藏達人</h5>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-              <img src="Me&Loopy.jpg" alt="與Loopy合影" class="loopy-img">
-              <img src="Loopy.jpg" alt="Loopy 收藏品" class="loopy-img">
-            </div>
-          </div>
-        </div>
-        <div class="card flex-fill text-center">
-          <div class="card-body">
-            <h5 class="card-title">打工狂魔 </h5>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-              <img src="Friend.jpg" alt="打工狂魔" class="work-img">
-              <img src="NY.jpg" alt="跨年人潮" class="work-img">
-            </div>
-            <p class="mt-2">跨年那天的人潮真的非常可怕 OUO</p>
-          </div>
+    <div class="text-center mb-5">
+      <img src="me.jpg" alt="個人照片" class="img-circle mb-3">
+      <h3>哈囉！我是詹芸婷 👋</h3>
+      <p class="lead">台科大企業管理系大三生｜Loopy收藏達人</p>
+      <p>平常不是在打工，就是在奔向Loopy的路上 🐿️。我喜歡韓國文化，也喜歡記錄生活。</p>
+    </div>
+    <h2 class="text-center mb-4">關於我</h2>
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Loopy 收藏達人</h5>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <img src="Me&Loopy.jpg" alt="與Loopy合影" class="loopy-img">
+          <img src="Loopy.jpg" alt="Loopy 收藏品" class="loopy-img">
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="projects" class="container py-5" data-aos="fade-up">
-  <h2 class="text-center mb-4">作品集</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <h5 class="card-title">巧雪夾心餅乾</h5>
-          <img src="cookies.jpg" class="loopy-img mt-3" alt="巧雪夾心餅乾">
-          <p class="card-text mt-3">濃郁巧克力 X 棉花糖，雙重口感！</p>
+    <h2 class="text-center mb-4">作品集</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">AI 校園生活管家</h5>
+            <p class="card-text">透過 ChatGPT 建立互動式腳本，模擬 AI 幫我安排課程、生活與社團選擇。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Poopy 系列攝影</h5>
+            <p class="card-text">紀錄我家薩摩耶日常，展現寵物攝影的情感與視角。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">社團週主視覺設計</h5>
+            <p class="card-text">以 Canva 製作社團活動主視覺，展現排版與色彩美感。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">焦糖布蕾推廣文案</h5>
+            <p class="card-text">為行銷課程撰寫的甜點商品文案，強調口感與誘因。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">台科樓長經驗分享</h5>
+            <p class="card-text">擔任第三宿舍10樓樓長時的紀錄與管理策略分享。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Loopy 收藏展示</h5>
+            <p class="card-text">展示我所蒐集的韓國角色 Loopy 系列周邊與創作應用。</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100 text-center">
-        <div class="card-body">
-          <h5 class="card-title">我叫 Poopy!</h5>
-          <img src="poopy.jpg" class="loopy-img mt-3" alt="Poopy">
-          <p class="card-text mt-3">可愛好動薩摩耶</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section id="contact" class="container py-5" data-aos="fade-up">
-  <h2 class="text-center mb-4">聯絡方式</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="card text-center">
-        <div class="card-body">
-           <p>📸 IG: <a href="https://instagram.com/noxiiz.9" target="_blank">@noxiiz.9</a></p>
-          <p>📱 電話: 0909888935</p>
-          <p>📧 Email: B11108049@gapps.ntust.edu.tw</p>
+    <h2 class="text-center mb-4">聯絡方式</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <p>📸 IG: <a href="https://instagram.com/noxiiz.9" target="_blank">@noxiiz.9</a></p>
+            <p>📱 電話: 0909888935</p>
+            <p>📧 Email: B11108049@gapps.ntust.edu.tw</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 詹芸婷 | Made with </p>
+    <p>&copy; 2025 詹芸婷 | Made with ❤️</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
